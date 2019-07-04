@@ -6,7 +6,7 @@ RUN apt-get update
 # RUN apt-get install python3-pip -y
 RUN pip install -r requirements.txt
 EXPOSE 8888
-ENTRYPOINT ["jupyter", "notebook", "--NotebookApp.token=''", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "notebook", "--NotebookApp.token=''", "--ip=0.0.0.0", "--allow-root"]
 # RUN python loop.py
 
 
